@@ -1,0 +1,98 @@
+*{
+  padding:0;
+  margin: 0;
+}
+
+.App{
+  background-color: rgb(251, 252, 253);
+  margin: 3rem 2rem;
+  border-radius: 7px;
+}
+.Order-Summary{
+  /* background-color: antiquewhite; */
+}
+/*==========================Header======================*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+  padding: 1rem 0;
+  button{
+    width: 9rem;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 5px 7px;
+  }
+}
+.Search-Box{
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  margin: 1rem 2rem;
+ padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  
+  @media (max-width:920px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+  }
+
+}
+.Main-Search input{
+  width: 150%;
+}
+.Main-Search{
+  @media (max-width:920px) {
+    margin: auto;
+    padding-top: 1rem;
+    
+  }
+  
+}
+.Category-Search{
+  width:20% ;
+  margin-left: 1rem;
+  @media (max-width:920px) {
+    gap: 10px;
+    width: 40%;
+    margin: auto;
+    
+  }
+}
+.Status-Search{
+  margin:0 -90px;
+}
+.Buttons-Option{
+  i{
+    padding: 20px;
+  }
+  .btn{
+    width: 9rem;
+  }
+}
+
+/*=========================Product Summary=============*/
+
+.ProductSummary{
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+.Product-Details{
+  margin: 1rem 2rem;
+  padding: 1rem 1rem;
+  background-color: white;
+  border-radius: 7px;
+
+}
+.Product-Search{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
