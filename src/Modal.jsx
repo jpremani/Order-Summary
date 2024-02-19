@@ -49,7 +49,12 @@ export default function Modal({closeModal,onSubmit,defaultValue}) {
     }
   return (
    
-    <div className="modal-container">
+    <div className="modal-container" onClick={(e)=>{
+      if(e.target.className==="modal-container"){
+        closeModal();
+      }
+
+    }}>
       <div className="Modal-form">
         <form>
           <div className="form-group">
